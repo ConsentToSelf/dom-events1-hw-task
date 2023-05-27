@@ -26,3 +26,13 @@ btnMsg.addEventListener("mouseover", (e) => {
 btnMsg.addEventListener("mouseout", (e) => {
   btnMsg.classList.remove("green");
 });
+
+// third
+
+/*
+При нажатии на любой узел документа показать в элементе с id=tag имя тега нажатого элемента.
+*/
+const idTagName = document.querySelector("#tag");
+document.body.addEventListener("click", (e) => {
+  idTagName.textContent = `Tag: ${e.target.nodeName}`;
+});
